@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Events Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="college.jpg" alt="College Logo">
+            <h1>College Events Hub</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="login-btn"><a href="#login">Login</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Discover Amazing College Events</h2>
+            <p>Find, register, and participate in all campus activities in one place</p>
+            <a href="#events" class="cta-btn">Explore Events</a>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="upcoming-events" id="events">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="filter-bar">
+            <select id="event-type">
+                <option value="all">All Events</option>
+                <option value="academic">Academic</option>
+                <option value="cultural">Cultural</option>
+                <option value="sports">Sports</option>
+                <option value="workshop">Workshops</option>
+            </select>
+            <input type="text" id="event-search" placeholder="Search events...">
+        </div>
+        <div class="events-grid">
+            <!-- Event Card 1 -->
+            <div class="event-card">
+                <img src="Tech.jpg" alt="Tech Symposium">
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">April</span>
+                </div>
+                <div class="event-info">
+                    <h3>Annual Tech Symposium</h3>
+                    <p><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Main Auditorium</p>
+                    <p class="event-desc">Join us for a day of tech talks, workshops, and networking with industry leaders.</p>
+                    <a href="event-details.html" class="details-btn">Details</a>
+                    <a href="#" class="register-btn">Register</a>
+                </div>
+            </div>
+            <!-- More event cards... -->
+        </div>
+    </section>
+
+    <!-- Event Categories Section -->
+    <section class="categories">
+        <h2 class="section-title">Browse By Category</h2>
+        <div class="category-grid">
+            <div class="category-card academic">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Academic</h3>
+            </div>
+            <div class="category-card cultural">
+                <i class="fas fa-music"></i>
+                <h3>Cultural</h3>
+            </div>
+            <!-- More categories... -->
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter to get the latest event updates</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>The College Events Hub is your one-stop platform for all campus activities and events.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> events@college.edu</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 College Events Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
